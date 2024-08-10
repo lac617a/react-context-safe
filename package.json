@@ -1,0 +1,105 @@
+{
+  "private": false,
+  "name": "create-context-safe",
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "description": "create-context-safe is a React library that ensures that your components always have safe access to the appropriate context. It simplifies the creation and use of contexts, ensuring that any attempt to use a context outside its bounds results in a clear, easy-to-debug error.",
+  "author": {
+    "name": "Dominyel Rivera - Yoydev",
+    "email": "dominyel.r@gmail.com",
+    "url": "https://yoydev.com/"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "keywords": [
+    "use",
+    "DRY",
+    "react",
+    "context",
+    "provider",
+    "react-context"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lac617a/react-context"
+  },
+  "bugs": {
+    "url": "https://github.com/lac617a/react-context/issues"
+  },
+  "scripts": {
+    "build": "tsc ./src/index.ts",
+    "test": "jest",
+    "prettier": "prettier --write .",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "test:coverage": "jest --coverage",
+    "prepublish": "yarn build"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.3.2",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.34.4",
+    "husky": "^8.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "resize-observer-polyfill": "^1.5.1",
+    "ts-jest": "^29.1.2",
+    "ts-jest-mock-import-meta": "^1.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": false,
+    "tabWidth": 2,
+    "printWidth": 80,
+    "editorconfig": true
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "ignorePatterns": [
+    "**/*.test.ts"
+  ]
+}
