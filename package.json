@@ -26,10 +26,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lac617a/react-context"
+    "url": "git+https://github.com/lac617a/react-context-safe"
   },
   "bugs": {
-    "url": "https://github.com/lac617a/react-context/issues"
+    "url": "https://github.com/lac617a/react-context-safe/issues"
   },
   "scripts": {
     "build": "tsc ./src/index.ts",
