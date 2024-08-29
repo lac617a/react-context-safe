@@ -2,10 +2,11 @@
   "private": false,
   "name": "create-context-safe",
   "license": "MIT",
-  "version": "1.0.2",
-  "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "1.0.3",
+  "type":"module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "description": "create-context-safe is a React library that ensures that your components always have safe access to the appropriate context. It simplifies the creation and use of contexts, ensuring that any attempt to use a context outside its bounds results in a clear, easy-to-debug error.",
   "author": {
     "name": "Dominyel Rivera - Yoydev",
@@ -32,12 +33,21 @@
     "url": "https://github.com/lac617a/react-context-safe/issues"
   },
   "scripts": {
-    "build": "tsc ./src/index.ts",
+    "build": "tsc",
     "test": "jest",
     "prettier": "prettier --write .",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test:coverage": "jest --coverage",
-    "prepublish": "yarn build"
+    "prepublish": "yarn build",
+    "compile": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/esm/index.js"
+    }
   },
   "peerDependencies": {
     "react": ">= 16.8.0",
