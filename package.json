@@ -2,9 +2,9 @@
   "private": false,
   "name": "create-context-safe",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "create-context-safe is a React library that ensures that your components always have safe access to the appropriate context. It simplifies the creation and use of contexts, ensuring that any attempt to use a context outside its bounds results in a clear, easy-to-debug error.",
   "author": {
